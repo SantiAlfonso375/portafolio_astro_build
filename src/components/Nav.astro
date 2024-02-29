@@ -1,0 +1,67 @@
+<div
+  x-data="{ open: false }"
+  class="relative flex flex-col w-full px-8 py-5 mx-auto md:items-center md:justify-between md:flex-row md:px-12 lg:px-32"
+>
+  <div
+    class="flex flex-row items-center justify-between text-white lg:justify-start"
+  >
+    <a href="/" class="inline-flex items-center gap-3">
+      <span
+        ><svg
+          width="30"
+          height="32"
+          viewBox="0 0 60 62"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M32.9219 8.84226C32.9219 5.86885 36.5379 4.40339 38.608 6.53787L57.6821 26.2056C58.9383 27.5009 59.6408 29.2344 59.6408 31.0388V53.8041C59.6408 56.7775 56.0248 58.243 53.9547 56.1085L34.8806 36.4407C33.6244 35.1454 32.9219 33.4119 32.9219 31.6075V8.84226Z"
+            fill="#737373"></path>
+          <path
+            d="M16.3633 8.19578C16.3633 5.22237 19.9793 3.75691 22.0494 5.89139L40.842 25.2689C42.2788 26.7503 43.0823 28.733 43.0823 30.7967V53.1576C43.0823 56.131 39.4662 57.5965 37.3961 55.462L18.322 35.7942C17.0658 34.4989 16.3633 32.7654 16.3633 30.9611V8.19578Z"
+            fill="#8F8F8F"></path>
+        </svg>
+      </span>
+      <span class="font-light text-xl uppercase">Portafolio</span>
+    </a>
+    <button
+      @click="open = !open"
+      class="inline-flex items-center justify-center p-2 text-white hover:text-indigo-400 focus:outline-none focus:text-white md:hidden"
+    >
+      <svg
+        class="w-6 h-6"
+        stroke="currentColor"
+        fill="none"
+        viewBox="0 0 24 24"
+      >
+        <path
+          :class="{'hidden': open, 'inline-flex': !open }"
+          class="inline-flex"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="2"
+          d="M4 6h16M4 12h16M4 18h16"></path>
+        <path
+          :class="{'hidden': !open, 'inline-flex': open }"
+          class="hidden"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="2"
+          d="M6 18L18 6M6 6l12 12"></path>
+      </svg>
+    </button>
+  </div>
+  <nav
+    :class="{'flex': open, 'hidden': !open}"
+    class="flex-col items-center flex-grow hidden md:pb-0 md:flex md:justify-end md:flex-row"
+  >
+    <a
+      class="px-2 py-2 text-sm font-normal text-vanta-300 lg:px-6 md:px-3 hover:text-white lg:ml-auto"
+      href="/">Overview</a
+    >
+    <a
+      class="px-2 py-2 text-sm font-normal text-vanta-300 lg:px-6 md:px-3 hover:text-white"
+      href="/system/styleguide">Styleguide</a
+    >
+  </nav>
+</div>
