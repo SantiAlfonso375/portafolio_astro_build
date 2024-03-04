@@ -1,56 +1,71 @@
 ---
-import CardsInclinadasCuatro from "../../components/Cards_inclinadas_cuatro.astro"
-import CardsInclinadas from "../../components/Cards_inclinadas.astro"
+import CardsInclinadasCuatro from "../../components/Cards_inclinadas_cuatro.astro";
+import CardsInclinadas from "../../components/Cards_inclinadas.astro";
 ---
-<section id="contact">
-  <div class="px-8 py-12 mx-auto md:px-12 lg:px-32 max-w-7xl lg:py-24">
+
+<div class="px-8 py-12 mx-auto md:px-12 lg:px-32 max-w-7xl lg:pt-48 plg:b-24">
+  <div
+    class="ring-white/10 ring-1 p-2 rounded-3xl bg-gradient-to-t from-white/20"
+  >
     <div
-      class="ring-white/10 ring-1 p-2 rounded-3xl bg-gradient-to-t from-white/20 relative"
+      class="grid grid-cols-1 lg:grid-cols-2 items-center p-8 lg:p-10 gap-12 ring-white/10 ring-1 rounded-2xl bg-card/80 shadow-massive"
     >
-      <img
-        class="absolute blur-3xl w-96 inset-x-0 h-96 mx-auto bottom-12 left-0"
-        src="/avatars/avatar1.svg"
-        alt=""
-      />
-      <div
-        class="flex flex-col bg-card/80 backdrop-blur-2xl rounded-2xl shadow-massive ring-white/10 ring-1 p-8 lg:p-20 relative"
-      >
-        <div class="lg:text-center max-w-2xl lg:mx-auto">
-          <p
-            class="bg-gradient-to-r from-vanta-50 via-vanta-300 to-vanta-600 bg-clip-text text-transparent text-4xl font-normal font-display tracking-tight pb-2 sm:text-6xl"
-          >
-            Join the community
-          </p>
-          <p class="text-vanta-300 mt-4 max-w-xs mx-auto">
-            At Vanta we believe that learning is a collaborative process.
-          </p>
-        </div>
-        <form
-          action=""
-          method="post"
-          id="#"
-          name="#"
-          target="_blank"
-          class="p-2 mt-8 transition lg:mx-auto duration-500 ease-in-out transform lg:border border-white/10 lg:bg-vanta-800 shadow-big rounded-xl sm:max-w-lg sm:flex"
+      <div>
+        <p
+          class="bg-gradient-to-r from-vanta-50 via-vanta-300 to-vanta-600 bg-clip-text text-transparent text-4xl font-normal font-display tracking-tight pb-2 sm:text-6xl"
         >
-          <div class="flex-1 min-w-0 border-b lg:border-0 border-vanta-700">
-            <label for="member_email" class="sr-only">Email address</label>
-            <input
-              autofocus=""
-              id="cta-email"
-              type="email"
-              class="block w-full px-5 py-2 placeholder-vanta-300 transition duration-500 ease-in-out transform bg-transparent border text-sm border-transparent rounded-lg text-white focus:outline-none focus:border-transparent focus:ring-2 focus:ring-white h-10 focus:ring-offset-2 focus:ring-offset-card"
-              placeholder="Enter your best email..."
-            />
-          </div>
-          <div class="mt-4 sm:mt-0 sm:ml-3">
-            <button
-              class="flex items-center justify-center h-10 px-4 py-2 text-sm text-white transition-all rounded-lg hover:to-vanta-600 bg-gradient-to-b from-vanta-300 via-vanta-400 to-vanta-500"
-              >Subscribe me</button
-            >
-          </div>
-        </form>
+          Explore our most <span class="lg:block">popular courses</span>
+        </p>
+        <p class="text-vanta-300 mt-4 max-w-sm">
+          Dive into courses loved by learners worldwide
+        </p>
+        <div class="flex mt-12">
+          <a
+            href="../../../public/icons/png/bx-code-alt.svg"
+            class="rounded-lg px-4 py-2 text-sm transition-all flex items-center justify-center text-white bg-gradient-to-b from-white/[.105] to-white/[.15] hover:to-white/[.25] h-10 ring-1 ring-inset ring-white/10"
+            >Send mail</a
+          >
+        </div>
+      </div>
+      <div class="relative">
+        <ul class="flex list-none" role="list">
+          <li
+            class="bg-card/80 backdrop-blur-2xl lg:-mt-32 p-8 rounded-2xl shadow-big ring-white/10 ring-1 flex flex-col h-full justify-between"
+          >
+            <div>
+              <div class="flex flex-col justify-between gap-4 w-full">
+                <div>
+                  <img
+                    class="inline-block w-24 h-24 rounded-full stroke-white bg-zinc-800 shadow-inner shadow-slate-200"
+                    src="../../../public/icons/png/bx-code-alt.svg"
+                    alt="Uncover the strategies behind successful digital campaigns, from social media to SEO, and elevate your marketing skills."
+                  />
+                </div>
+                
+              </div>
+              <div class="inline-flex mt-12 items-center gap-2 w-full">
+                <div>
+                 
+   
+                  </span>
+                </div>
+                <div>
+                  <p
+                    class="inline-flex gap-2 items-center rounded-md px-2 py-1 text-xs text-white"
+                  >
+                    <span>
+                    
+                      
+                    </span>
+
+                  </p>
+                </div>
+              </div>
+
+            </div>
+          </li>
+        </ul>
       </div>
     </div>
   </div>
-</section>
+</div>

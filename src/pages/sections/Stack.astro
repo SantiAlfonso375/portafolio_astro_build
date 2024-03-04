@@ -1,7 +1,122 @@
 ---
-import TechStack from "../../components/Tech_stack.astro";
+import CardsInclinadas from "../../components/Cards_inclinadas.astro";
+import Icon from "../../components/Icons.astro";
 ---
 
-<section>
- 
+<section class="fondo-stack">
+  <div
+    class="px-8 py-12 mx-auto md:px-12 lg:px-32 max-w-7xl lg:py-24 relative"
+  >
+    <!-- Title -->
+    <div class="max-w-2xl mx-auto text-center">
+      <h1
+        class="text-shadow-glow xs:text-fluid-base z-20 max-w-[20ch] animate-fade-up text-center sm:text-6xl text-[35px] font-semibold leading-none"
+      >
+        <span
+          id="stack"
+          class="bg-clip-text text-transparent pb-2 bg-gradient-to-r from-[#e8b066] to-[#df12ff]"
+          >Stack</span
+        >
+      </h1>
+    </div>
+    <!-- Cards Inclinadas -->
+    <ol
+      role="list"
+      class="grid grid-cols-1 gap-3 mt-12 sm:grid-cols-2 lg:mt-24 lg:grid-cols-3 [&>*:nth-child(1)]:-rotate-12 [&>*:nth-child(3)]:rotate-12"
+    >
+      <CardsInclinadas Technology="Back end">
+        <Icon
+          title="Node.js "
+          href="/icons/png/bxl-nodejs.png"
+          alt="Node.js "
+        />
+        <Icon
+          title="Python "
+          href="/icons/png/bxl-python.png"
+          alt="Python"
+        />
+        <Icon
+          title="Flask "
+          href="/icons/png/bxl-flask.png"
+          alt="Flask "
+        />
+      </CardsInclinadas>
+      <CardsInclinadas Technology="Front end">
+        <Icon
+          title="HTML5"
+          href="/public/icons/png/bxl-html5.png"
+          alt="HTML5"
+        />
+        <Icon
+          title="CSS3"
+          href="/public/icons/png/bxl-css3.png"
+          alt="CSS3"
+        />
+        <Icon
+          title="Tailwind CSS"
+          href="/public/icons/png/bxl-tailwind-css.png"
+          alt="Tailwind CSS"
+        />
+        <Icon
+          title="JavaScript"
+          href="/public/icons/png/bxl-javascript.png"
+          alt="JavaScript"
+        />
+        <Icon
+          title="TypeScript"
+          href="/public/icons/png/bxl-typescript.png"
+          alt="TypeScript"
+        />
+        <Icon
+          title="ReactJS"
+          href="/public/icons/png/bxl-react.png"
+          alt="ReactJS"
+        />
+        <Icon
+          title="AngularJS "
+          href="/public/icons/png/angular-logo-24.png"
+          alt="AngularJS "
+        />
+      </CardsInclinadas>
+      <CardsInclinadas Technology="Data Base and Other">
+        <Icon
+          title="Git"
+          href="/public/icons/png/bxl-git.png"
+          alt="Git"
+        />
+        <Icon
+          title="GitHub"
+          href="/public/icons/png/bxl-github.png"
+          alt="GitHub"
+        />
+        <Icon
+          title="PostgreSQL"
+          href="/public/icons/png/bxl-postgresql.png"
+          alt="PostgreSQL"
+        />
+        <Icon
+          title="MongoDB"
+          href="/public/icons/png/bxl-mongodb.png"
+          alt="MongoDB"
+        />
+      </CardsInclinadas>
+    </ol>
+  </div>
 </section>
+
+<style>
+    .fondo-stack{
+        /*  background: rgb(87, 87, 87);
+    background: radial-gradient(
+      circle,
+      rgba(87, 87, 87, 1) 0%,
+      rgba(3, 3, 3, 1) 40%
+    ); */
+    background: rgb(87, 87, 87);
+    background: radial-gradient(
+      circle,
+      rgba(87, 87, 87, 1) 1%,
+      rgba(3, 3, 3, 0.946) 45%
+    );
+    }
+</style>

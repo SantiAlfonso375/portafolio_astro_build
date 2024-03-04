@@ -1,73 +1,9 @@
 ---
-import { idText } from "typescript";
 import Nav from "../../components/Nav.astro";
 ---
 
 <body id="home" class="">
-  <div class="fixed z-50 w-full overflow-hidden relatve backdrop-blur-2xl">
-    <!--   <Nav /> -->
-    <div
-      x-data="{ open: false }"
-      class="relative flex flex-col w-full px-8 py-5 mx-auto md:items-center md:justify-between md:flex-row md:px-12 lg:px-32"
-    >
-      <div
-        class="flex flex-row items-center justify-between text-white lg:justify-start"
-      >
-        <a href="/" class="inline-flex items-center gap-3">
-          <span class="w-14 h-14 rounded-full">
-            <img
-              src="../../public/logo2.jpeg"
-              alt="logo"
-            />
-          </span>
-          <span class="font-light text-xl uppercase">Portfolio</span>
-        </a>
-        <button
-          @click="open = !open"
-          class="inline-flex items-center justify-center p-2 text-white hover:text-indigo-400 focus:outline-none focus:text-white md:hidden"
-        >
-          <svg
-            class="w-6 h-6"
-            stroke="currentColor"
-            fill="none"
-            viewBox="0 0 24 24"
-          >
-            <path
-              :class="{'hidden': open, 'inline-flex': !open }"
-              class="inline-flex"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="2"
-              d="M4 6h16M4 12h16M4 18h16"></path>
-            <path
-              :class="{'hidden': !open, 'inline-flex': open }"
-              class="hidden"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="2"
-              d="M6 18L18 6M6 6l12 12"></path>
-          </svg>
-        </button>
-      </div>
-      <nav
-        :class="{'flex': open, 'hidden': !open}"
-        class="flex-col items-center flex-grow hidden md:pb-0 md:flex md:justify-end md:flex-row"
-      >
-        <a
-          class="px-2 py-2 text-sm font-normal text-vanta-300 lg:px-6 md:px-3 hover:text-white lg:ml-auto"
-          href="#home">Home</a
-        >
-        <a
-          class="px-2 py-2 text-sm font-normal text-vanta-300 lg:px-6 md:px-3 hover:text-white"
-          href="#project">Project</a
-        >
-        <a
-          class="px-2 py-2 text-sm font-normal text-vanta-300 lg:px-6 md:px-3 hover:text-white"
-          href="#contact">contact</a
-        >
-      </nav>
-    </div>
-  </div>
+  <Nav></Nav>
 </body>
 
 <style>

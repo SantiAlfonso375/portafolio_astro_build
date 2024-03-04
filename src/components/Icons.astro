@@ -1,0 +1,13 @@
+---
+interface Props {
+    title: string;
+    href: string;
+    alt: string;
+}
+const {title, href, alt} = Astro.props;
+---
+<li>
+    <div class="flex flex-row justify-start gap-4 text-xl py-2">
+        <img class="h-auto w-8" src={href} alt={alt}> <span>{title}</span>
+    </div>
+</li>
