@@ -1,16 +1,20 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import Card from "../components/Card.astro";
 import Header from "../pages/sections/Header.astro";
-import Cards_projects from "../components/Cards_projects.astro";
-import Projects from "../pages/sections/Projects.astro";
 import About from "../pages/sections/About.astro";
+import Projects from "./Projects.astro";
+import Stack from "./sections/Stack.astro";
+import Contact from "./sections/Contact.astro";
+import Footer from "./sections/Footer.astro";
 ---
 
 <Layout title="Portafolio">
   <main>
-	  <Header />
-	  <About ></About>
-	  <Projects />
+    <Header client:load/>
+    <About  />
+    <Stack />
+    <Projects />
+    <!-- <Contact/> -->
+    <Footer />
   </main>
 </Layout>
