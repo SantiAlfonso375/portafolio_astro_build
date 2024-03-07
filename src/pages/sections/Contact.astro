@@ -2,66 +2,84 @@
 import CardsInclinadasCuatro from "../../components/Cards_inclinadas_cuatro.astro";
 import CardsInclinadas from "../../components/Cards_inclinadas.astro";
 ---
-
-<div class="px-8 py-12 mx-auto md:px-12 lg:px-32 max-w-7xl lg:pt-48 plg:b-24">
+<div id="contact" class="px-8 pt-28 pb-8 mx-auto md:px-12 lg:px-32 max-w-7xl lg:pt-48 plg:b-24 luz">
   <div
-    class="ring-white/10 ring-1 p-2 rounded-3xl bg-gradient-to-t from-white/20"
+  class="ring-white/10 ring-1 p-2 rounded-3xl bg-gradient-to-t from-white/20"
   >
-    <div
-      class="grid grid-cols-1 lg:grid-cols-2 items-center p-8 lg:p-10 gap-12 ring-white/10 ring-1 rounded-2xl bg-card/80 shadow-massive"
+  <div
+  class="grid grid-cols-1 lg:grid-cols-2 items-center p-8 lg:p-10 gap-12 ring-white/10 ring-1 rounded-2xl bg-card/80 shadow-massive"
+  >
+  <div>
+    <p
+    class="bg-gradient-to-r from-vanta-50 via-vanta-300 to-vanta-600 bg-clip-text text-[#c4c8cd52] text-4xl font-normal font-display tracking-tight pb-2 sm:text-6xl"
     >
-      <div>
-        <p
-          class="bg-gradient-to-r from-vanta-50 via-vanta-300 to-vanta-600 bg-clip-text text-transparent text-4xl font-normal font-display tracking-tight pb-2 sm:text-6xl"
-        >
-          Explore our most <span class="lg:block">popular courses</span>
+    Teamwork   <span class="lg:block"
+    >is what takes people beyond their limits.</span
+    >
+    
         </p>
-        <p class="text-vanta-300 mt-4 max-w-sm">
-          Dive into courses loved by learners worldwide
-        </p>
-        <div class="flex mt-12">
+        <p class=" mt-4 max-w-sm text-white text-base">Let's be a team.</p>
+        <div class="flex mt-6">
           <a
-            href="../../../public/icons/png/bx-code-alt.svg"
+            href="mailto:santiagoa375@gmail.com?subject=Work&body="
             class="rounded-lg px-4 py-2 text-sm transition-all flex items-center justify-center text-white bg-gradient-to-b from-white/[.105] to-white/[.15] hover:to-white/[.25] h-10 ring-1 ring-inset ring-white/10"
             >Send mail</a
           >
         </div>
       </div>
       <div class="relative">
-        <ul class="flex list-none" role="list">
+        <ul class="flex list-none justify-center" role="list">
           <li
-            class="bg-card/80 backdrop-blur-2xl lg:-mt-32 p-8 rounded-2xl shadow-big ring-white/10 ring-1 flex flex-col h-full justify-between"
+            class="bg-card/80 backdrop-blur-2xl lg:-mt-32 p-8 rounded-2xl shadow-big ring-white/10 ring-1 flex flex-col h-full justify-between  shadow-2xl shadow-[#8f8f8f]"
           >
             <div>
-              <div class="flex flex-col justify-between gap-4 w-full">
-                <div>
+              <div class="flex flex-col justify-between w-full">
+                <div class="flex justify-center">
                   <img
-                    class="inline-block w-24 h-24 rounded-full stroke-white bg-zinc-800 shadow-inner shadow-slate-200"
+                    class="inline-block w-24 h-24"
                     src="../../../public/icons/png/bx-code-alt.svg"
-                    alt="Uncover the strategies behind successful digital campaigns, from social media to SEO, and elevate your marketing skills."
+                    alt="contact for work"
                   />
                 </div>
-                
               </div>
               <div class="inline-flex mt-12 items-center gap-2 w-full">
                 <div>
-                 
-   
-                  </span>
-                </div>
-                <div>
-                  <p
-                    class="inline-flex gap-2 items-center rounded-md px-2 py-1 text-xs text-white"
-                  >
-                    <span>
-                    
+                  <ol class="flex flex-col pt-1 pb-10 px-10 gap-4">
+                    <li class="flex flex-row">
+                      <img
+                        src="/icons/png/bxl-linkedin-square.svg"
+                        alt="Linkedin"
+                      />
                       
-                    </span>
-
-                  </p>
+                      <a
+                        href="https://www.linkedin.com/in/santiago-alfonso-20ba28192/?originalSubdomain=ar"
+                        target="_blank"
+                        class="inline-flex gap-2 items-center rounded-md px-2 py-1 text-4xl text-[#c4c8cd] hover:text-white"
+                      >
+                        Linkedin
+                      </a>
+                    </li>
+                    <li class="flex flex-row">
+                      <img src="/icons/png/bxl-github.svg" alt="github" />
+                      <a href="https://github.com/SantiAlfonso375"
+                      target="_blank"
+                        class="inline-flex gap-2 items-center rounded-md px-2 py-1 text-4xl text-[#c4c8cd] hover:text-white"
+                      >
+                        GitHub
+                      </a>
+                    </li>
+                    <li class="flex flex-row">
+                      <img src="/icons/png/bxs-down-arrow-circle.svg" alt="CV" />
+                      <a href="https://github.com/SantiAlfonso375"
+                      target="_blank"
+                        class="inline-flex gap-2 items-center rounded-md px-2 py-1 text-4xl text-[#c4c8cd] hover:text-white"
+                      >
+                        CV
+                      </a>
+                    </li>
+                  </ol>
                 </div>
               </div>
-
             </div>
           </li>
         </ul>
@@ -69,3 +87,18 @@ import CardsInclinadas from "../../components/Cards_inclinadas.astro";
     </div>
   </div>
 </div>
+
+<style>
+  .luz{
+    background-position: right;
+    background: rgba(87, 87, 87, 0);
+    background: radial-gradient(
+      circle,
+      rgba(87, 87, 87, 1) 0%,
+      rgba(3, 3, 3, 0) 53%
+    );
+  }
+  svg{
+    fill: red;
+  }
+</style>
