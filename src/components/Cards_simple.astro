@@ -2,25 +2,27 @@
 interface Props {
   project: string;
   title: string;
-  description: string;
+  description?: string;
   tags: string;
   href?: string;
-} 
-const {project, title, description, tags, href} = Astro.props;
+}
+const { project, title, description, tags, href } = Astro.props;
 ---
-<!-- <ol
-  role="list"
-  class="grid grid-cols-1 gap-3 mt-12 sm:grid-cols-2 lg:mt-24 lg:grid-cols-3"
-  >
-</ol> -->
+
 <slot>
-  <li
-  class="ring-white/10 ring-1 p-2 bg-gradient-to-t from-white/20 rounded-3xl"
+<!--   <li
+    class=" ring-white/10 ring-1 p-2 bg-gradient-to-t from-white/20 rounded-3xl"
   >
-  <div
-  class="h-full p-8 ring-1 ring-white/10 rounded-2xl lg:p-10 shadow-massive bg-card/80"
-  >
-      <div class="flex flex-col justify-between h-full">
+    
+  </li> -->
+  <li class="card w-full h-[26rem] ring-white/10 ring-1 p-2 bg-gradient-to-t from-white/20 rounded-3xl mb-8 sm:mb-72">
+    <div class="content">
+      <div class="back">
+        <div class="back-content">
+          <div
+      class=" h-full w-full p-8 ring-1 ring-white/10 rounded-2xl lg:p-10 shadow-massive bg-card/80 "
+    >
+      <div class="flex flex-col justify-between h-full ">
         <div>
           <div class="flex-shrink-0 block">
             <div class="flex items-center">
@@ -37,12 +39,118 @@ const {project, title, description, tags, href} = Astro.props;
               </div>
             </div>
           </div>
-          <p class="text-sm text-vanta-300 mt-12">
+          <!-- <p class="text-sm text-vanta-300 mt-12">
             {description}
-          </p>
+          </p> -->
         </div>
         <p class="text-sm mt-12 font-display text-white">{tags}</p>
+        <a
+          href="#"
+          class="rounded-lg ml-1 px-7 py-6 text-lg transition-all flex items-center justify-center text-white bg-gradient-to-b from-white/[.105] to-white/[.15] hover:to-white/[.25] h-10 ring-1 ring-inset ring-white/10"
+          >view project</a
+        >
+      </div>
+    </div>
+        </div>
       </div>
     </div>
   </li>
 </slot>
+
+<style>
+  .card {
+    display: flex;
+    justify-content: center;
+    overflow: visible;
+  }
+
+  .content {
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    transition: transform 400ms;
+    box-shadow: 0px 0px 10px 1px #000000ee;
+    border-radius: 5px;
+  }
+
+  .front,
+  .back {
+    background-color: #151515;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+    border-radius: 5px;
+    overflow: hidden;
+  }
+
+  .back {
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+  }
+
+  .back::before {
+    position: absolute;
+    content: " ";
+    display: block;
+    width: 160px;
+    height: 160%;
+    background: linear-gradient(
+      90deg,
+      transparent,
+      #c4c8cd,
+      #c4c8cd,
+      #c4c8cd,
+      #c4c8cd,
+      transparent
+    );
+    animation: rotation_481 5000ms infinite linear;
+  }
+
+  .back-content {
+    position: absolute;
+    width: 99%;
+    height: 99%;
+    background-color: #151515;
+    border-radius: 5px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+  }
+
+/*   .card:hover .content {
+    transform: rotateY(180deg);
+  } */
+
+  @keyframes rotation_481 {
+    0% {
+      transform: rotateZ(0deg);
+    }
+
+    0% {
+      transform: rotateZ(360deg);
+    }
+  }
+
+  @keyframes floating {
+    0% {
+      transform: translateY(0px);
+    }
+
+    50% {
+      transform: translateY(10px);
+    }
+
+    100% {
+      transform: translateY(0px);
+    }
+  }
+</style>

@@ -49,25 +49,25 @@ function Button() {
         } md:pb-0 md:flex md:justify-end md:flex-row`}
       >
         <a
-          className="px-2 py-2 text-sm font-normal text-vanta-300 lg:px-6 md:px-3 hover:text-white lg:ml-auto"
+          className="px-2 py-2 text-lg font-normal text-vanta-300 lg:px-6 md:px-3 hover:bg-gradient-to-r from-[#df12ff] to-[#e8b066]hover:bg-clip-text hover:rounded-3xl lg:ml-auto"
           href="#home"
         >
           Home
         </a>
         <a
-          className="px-2 py-2 text-sm font-normal text-vanta-300 lg:px-6 md:px-3 hover:text-white"
+          className="px-2 py-2 text-lg font-normal text-vanta-300 lg:px-6 md:px-3 hover:bg-gradient-to-r from-[#df12ff] to-[#e8b066]hover:bg-clip-text hover:rounded-3xl"
           href="#stack"
         >
           Stack
         </a>
         <a
-          className="px-2 py-2 text-sm font-normal text-vanta-300 lg:px-6 md:px-3 hover:text-white"
+          className="px-2 py-2 text-lg font-normal text-vanta-300 lg:px-6 md:px-3 hover:bg-gradient-to-r from-[#df12ff] to-[#e8b066]hover:bg-clip-text hover:rounded-3xl"
           href="#project"
         >
           Project
         </a>
         <a
-          className="px-2 py-2 text-sm font-normal text-vanta-300 lg:px-6 md:px-3 hover:text-white"
+          className="px-2 py-2 text-lg font-normal text-vanta-300 lg:px-6 md:px-3 hover:bg-gradient-to-r from-[#df12ff] to-[#e8b066]hover:bg-clip-text hover:rounded-3xl"
           href="#contact"
         >
           contact

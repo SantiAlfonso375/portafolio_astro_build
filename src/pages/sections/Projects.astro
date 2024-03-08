@@ -1,8 +1,7 @@
 ---
-import Cards_projects from "../components/Cards_projects.astro";
-import Cards_info from "../components/Cards_info.astro";
-import Cards_simple from "../components/Cards_simple.astro";
-import Tech_stack from "../components/Tech_stack.astro";
+import Cards_projects from "../../components/Cards_projects.astro";
+import Cards_info from "../../components/Cards_info.astro";
+import Cards_simple from "../../components/Cards_simple.astro";
 ---
 
 <section 
@@ -21,7 +20,7 @@ import Tech_stack from "../components/Tech_stack.astro";
   </div>
   <ol
     role="list"
-    class="grid grid-cols-1 gap-3 mt-12 sm:grid-cols-2 lg:mt-12 lg:grid-cols-3"
+    class="flex flex-col justify-center sm:grid gap-4 mt-12 sm:grid-cols-2 lg:mt-12 lg:grid-cols-3"
   >
     <Cards_simple
       project="Project 1"
