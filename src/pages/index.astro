@@ -6,15 +6,16 @@ import Projects from "./sections/Projects.astro";
 import Stack from "./sections/Stack.astro";
 import Contact from "./sections/Contact.astro";
 import Footer from "./sections/Footer.astro";
+
 ---
 
 <Layout title="Portafolio">
-  <main>
+  <section id="container">
     <Header/>
-  </main>
-  <About  />
-  <Stack/>
-  <Projects />
-  <Contact/>
-  <Footer />
+    <About  />
+    <Stack/>
+    <Projects />
+    <Contact/>
+    <Footer />
+  </section>
 </Layout>
