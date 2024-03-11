@@ -1,7 +1,6 @@
 ---
-import Cards_projects from "../../components/Cards_projects.astro";
 import Cards_info from "../../components/Cards_info.astro";
-import Cards_simple from "../../components/Cards_simple.astro";
+import Cards_project from "../../components/Cards_project.astro";
 ---
 
 <section
@@ -21,10 +20,23 @@ import Cards_simple from "../../components/Cards_simple.astro";
     role="list"
     class="flex flex-col justify-center sm:grid gap-4 mt-12 sm:grid-cols-2 lg:mt-12 lg:grid-cols-3"
   >
-    <Cards_simple
+    <Cards_project
       title="Portfolio"
       ,
-      href_img="/983shots_so.png"
+      href_img="/983shots_so.png",
+      href_link="https://github.com/SantiAlfonso375/portafolio_astro_build"
+    />
+    <Cards_project
+      title=""
+      ,
+      href_img="",
+      href_link=""
+    />
+    <Cards_project
+      title=""
+      ,
+      href_img="",
+      href_link=""
     />
   </ol>
 </section>
