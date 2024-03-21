@@ -28,7 +28,7 @@ const { title, href_link, href_img } = Astro.props;
                 <p class="text-3xl text-[#ffffff98]">{title}</p>
               </div>
               <img
-                class="inline-block w-full h-48 sm:h-60 shrink-0"
+                class="inline-block w-full h-48 sm:h-60 shrink-0 profile"
                 src={href_img}
                 alt="image project"
               />
@@ -214,5 +214,10 @@ const { title, href_link, href_img } = Astro.props;
 .cssbuttons-io-button:active .icon {
   transform: scale(0.95);
 }
-
+.profile{
+  mask-image: linear-gradient(
+    black 80%,
+    transparent
+  );
+}
 </style>
